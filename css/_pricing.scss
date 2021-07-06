@@ -1,0 +1,444 @@
+.pricing{
+    width: 60%;
+    text-align: center;
+    margin: 0 auto;
+    @include flex_property;
+
+    h1{
+        width: 100%;
+        font-weight: 600;
+        margin: 14px 0;
+        font-size: 38px;
+    }
+    p{
+        width: 100%;
+        font-size: 17px;
+        font-weight: 300;
+    }
+    
+    .button{
+        width: 100px;
+        height: 33px;
+        color: #4232c2;
+        border-radius: 15px;
+        font-weight: 300;
+        border: 1px solid #4232c2;
+        background-color: white;
+        font-size: 16px;
+        margin: 25px 0;
+    }
+
+    .button:hover{
+        background-color: #4232c2;
+        color: white;
+    }
+
+    li{
+        list-style-type: none;
+        font-weight: 300;
+        font-size: 15px
+    }
+
+    h4{
+        font-weight: 600;
+    }
+}
+
+//Pricing1 Starts Here
+.pricing1{
+    width: 60%;
+    margin: 80px auto 40px auto;
+    @include flex_property;
+
+    .box{
+        width: 27%;
+        box-shadow: 0 2px 2px rgba(136, 136, 136, 0.12),
+        0 2px 2px rgba(136, 136, 136,0.12),
+        0 2px 2px rgba(136, 136, 136, 0.12),
+        0 2px 2px rgba(136, 136, 136,0.12),
+        0 2px 2px rgba(136, 136, 136,0.12);
+        border-radius: 9px;
+        margin-top: 100px;
+        margin-bottom: 50px;
+        padding: 30px 0;
+
+        .icon{
+            color: #6266ea;
+            font-size:65px;
+            margin-top: 30px;
+        }
+
+        h5{
+            font-size: 15px;
+            margin: 15px 0;
+        }
+
+        li{
+            font-size: 15px;
+            text-align: start;
+            margin: 5px 20% 5px 30%;
+        }
+
+        .button2{
+            background-color: #6266ea;
+            border: 1px solid #6266ea;
+            border-color: white;
+            color:white;
+        }
+
+        .button2:hover{
+            background-color: white;
+            border: 1px solid white;
+            color: #4232c2;
+        }
+    }
+
+    .box-2{
+        background-color: #6266ea;
+        color: white;
+        margin: 60px 0;
+        transform: scale(1.12);
+
+        .icon{
+            color: white;
+        }
+    }
+}
+//Pricing1 Starts Here
+
+//Pricing2 Starts Here
+.pricing2{
+    width: 100%;
+    background-color: #f6f9fe;
+    
+    .banner{
+        width: 55%;
+        margin: 60px auto;
+
+        .box{
+            width: 100%;
+            background-color: white;
+            margin: 40px 0;
+            border-radius: 12px;
+            @include flex_property;
+            box-shadow: 0 2px 2px rgba(136, 136, 136, 0.12),
+            0 2px 2px rgba(136, 136, 136,0.12),
+            0 2px 2px rgba(136, 136, 136, 0.12),
+            0 2px 2px rgba(136, 136, 136,0.12),
+            0 2px 2px rgba(136, 136, 136,0.12);
+        }
+
+        .box{
+            .left{
+                width: 25%;
+                background-color: #6266ea;
+                color: white;
+                padding: 60px 0;
+                border-radius: 12px 0 0 12px ;
+
+                .icon{
+                    font-size: 60px;
+                }
+            }
+        }
+
+        .box{
+            .center{
+                width: 50%;
+                padding: 60px 0;
+
+                li{
+                    text-align: left;
+                    margin: 5px auto auto 30%;
+                }
+            }
+        }
+        
+        .box{
+            .right{
+                width: 25%;
+                padding: 60px 0;
+            }
+        }
+    }
+}
+//Pricing2 Ends Here
+
+//Pricing3 Starts Here
+.pricing3{
+    width: 68%;
+    margin: 100px auto;
+
+    .left{
+        width: 49%;
+        margin-top: 60px;
+        img{
+            width: 100%;
+        }
+    }
+    
+    .right{
+        width: 49%;
+        margin: auto 0;
+        @include flex_property;
+
+        .sec{
+            width: 100%;
+            @include flex_property;
+            box-shadow: 0 1px 1px rgba(136, 136, 136, 0.12),
+            0 1px 1px rgba(136, 136, 136,0.12),
+            0 1px 1px rgba(136, 136, 136, 0.12),
+            0 1px 1px rgba(136, 136, 136,0.12),
+            0 1px 1px rgba(136, 136, 136,0.12);
+            margin: 5px auto;
+            border-radius:8px ;
+            padding: 10px 0;
+            
+            .icon{
+                font-size: 70px;
+                margin: 5px auto;
+                color: #6266ea;
+            }
+
+            h4{
+                width: 50%;
+                text-align: center;
+                margin: auto; 
+                
+                span{
+                    font-weight: 300;
+                    font-size: 16px;
+                }
+            }
+
+            .button{
+                background-color: #4232c2;
+                color: white;
+                margin: auto;
+                border-radius: 40px;
+                font-size: 14px;
+            }
+
+            .button:hover{
+                background-color: #2d15df;
+                color: white;
+            }
+        }
+
+        .button{
+            border-radius: 4px;
+            text-align:center;
+            padding: 3px;
+            margin:20px auto;
+            font-size: 15px;
+        }
+    }
+}
+//Pricing3 Ends Here
+
+
+//Media Query Starts Here
+@media(max-width:1398px){
+    .pricing1{
+        width: 80%;
+    }
+
+    .pricing2{
+        .banner{
+            width: 65%;
+        }
+    }
+
+    .pricing3{
+        width: 75;
+    }
+}
+
+@media(max-width:1200px){
+    .pricing{
+        .box{
+            width: 30%;
+            padding: 20px 0;
+        }
+    }
+
+    .pricing2{
+        .banner{
+            width: 70%;
+            .box{
+                padding: 0;
+            }
+        }
+    }
+
+    .pricing3{
+        width: 85%;
+        .right{
+            
+            .sec{
+                .icon{
+                    font-size: 50px;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:992px){
+    .pricing1{
+        width: 95%;
+    }
+
+    .pricing2{
+        .banner{
+            width: 60%;
+            .box{
+              .left,.center,.right{
+                  padding: 45px 0;
+                }
+            }
+        }
+    }
+
+    .pricing3{
+        width: 70%;
+
+        .left,.right{
+            img{
+                width: 70%;
+            }
+            width: 100%;
+        }
+    }
+}
+
+@media(max-width:768px){
+    .pricing1{
+        width: 80%;
+        .box{
+            width:60%;
+            margin: 40px auto;
+        }
+    }
+
+    .pricing2{
+        .banner{
+            .box{
+                .left,.right,.center{
+                    width: 100%;
+                    padding: 10px 0;
+
+                    li{
+                        margin: 5px auto auto 10%;
+                    }
+                }
+
+                .left{
+                    padding: 30px;
+                    border-radius: 12px 12px 0 0 ;
+                }
+            }
+        }
+    }
+
+    .pricing3{
+        width: 80%;
+
+        .right{
+            .sec{
+                width: 80%;
+                text-align: center;
+               .icon{
+                   width: 100%;
+                   margin: 20px auto;
+               }
+               
+               h4{
+                   width: 100%;
+                   margin: 20px auto;
+                }
+            }
+            .sec-4{
+                border: none;
+                box-shadow: none;
+
+                .button{
+                    border-radius: 4px;
+                    text-align:center;
+                    padding: 3px;
+                    margin:20px auto;
+                    font-size: 15px;
+                    background-color: white;
+                    border: 1px solid #2d15df;
+                    color: #2d15df;
+                }
+            }
+
+        }
+    }
+}
+
+@media(max-width:576px){
+    .pricing1{
+        width: 100%;
+        .box{
+            width: 65%;
+        }
+    }
+
+    .pricing2{
+        .banner{
+            width: 75%;
+        }
+    }
+
+    .pricing3{
+        width: 90%;
+
+        .left{
+            img{
+                width: 100%;
+            }
+        }
+
+        .right{
+            .sec{
+                width: 95%;
+            }
+        }
+    }
+}
+
+@media(max-width:428px){
+    .pricing1{
+        width: 100%;
+        .box{
+            width: 82%;
+            li{
+                margin-left:5% ;
+            }
+        }
+    }
+
+    .pricing2{
+        .banner{
+            width: 85%;
+            .box{
+                .center{
+                    li{
+                        margin-left:5%;
+                    }
+                }
+            }
+        }
+    }
+
+    .pricing3{
+        .right{
+            .sec{
+               padding: 20px 0;
+            }
+        }
+    }
+}
+//Media Query Ends Here

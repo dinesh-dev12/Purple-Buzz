@@ -1,0 +1,899 @@
+// AboutUs.html Starts Here ---------- AboutUs.html Starts Here ---------- AboutUs.html Starts Here
+
+// About-Section Starts Here
+.aboutus{
+    width: 100%;
+    background-color: #f6f9fe !important;
+    
+    .banner{
+        width: 70%;
+        margin: 0 auto;
+        @include flex_property();
+
+        .sec-1{
+            width: 50%;
+            margin: auto;
+
+            h1{
+                color: #4232c2;
+                font-size:40px;
+                font-weight: 600;
+            }
+
+            hr{
+                width: 150px;
+                height: 5px;
+                border: none;
+                background-color: #6266ea;
+                margin: 20px 0;
+            }
+
+            p{
+                font-weight: 200;
+                line-height: 26px;
+                font-size: 16px;
+            }
+        }
+        
+        .sec-2{
+            width: 50%;
+            margin: 5% 0;
+            img{
+                width: 100%;
+            }
+        }
+    }
+}
+// About-Section Ends Here
+
+// OurTeam-Section Starts Here
+.team{
+    width: 100%;
+
+    .banner{
+        width: 70%;
+        @include flex_property();
+        margin: 80px auto;
+
+        .sec-1{
+            width: 20%;
+            margin: auto auto;
+            
+
+            h1{
+                color: #000;
+                font-size:40px;
+                font-weight: 600;
+            }
+
+            hr{
+                width: 150px;
+                height: 5px;
+                border: none;
+                background-color: #6266ea;
+                margin: 20px 0;
+            }
+
+            p{
+                font-weight: 200;
+                line-height: 26px;
+            }
+        }
+
+        .sec-2{
+            width: 75%;
+            @include flex_property();
+            text-align: center;
+            
+
+            .img-1{
+                width:30%;
+                img{
+                    width:90%;
+                    border-radius: 50%;
+                    transition: transform 0.2s ease-in-out;
+                }
+
+                h4{
+                    font-weight: 200;
+                    margin: 30px 0;
+                }
+            }
+
+            .img-2{
+                width: 30%;
+                img{
+                    width: 90%;
+                    border-radius: 50%;
+                    transition: transform 0.2s ease-in-out;
+                }
+
+                h4{
+                    font-weight: 200;
+                    margin: 30px 0;
+                }
+            }
+
+            .img-3{
+                width: 30%;
+                img{
+                    width: 90%;
+                    border-radius: 50%;
+                    transition: transform 0.2s ease-in-out;
+                }
+
+                h4{
+                    font-weight: 200;
+                    margin: 30px 0;
+                }
+            }
+        }
+
+        img:hover{
+            transform: scale(1.2);
+        }
+         
+    }
+}
+// OurTeam-Section Ends Here
+
+// OurPartners Starts Here
+
+.partner{
+    width:100%;
+    padding: 100px 0;
+    background-color: #6266ea;
+    text-align: center;
+    h1{
+        color: white;
+        font-weight: 600;
+    }
+
+    .banner{
+        width: 70%;
+        margin: 0 auto;
+        @include flex_property();
+        
+        a{
+            width: 23.5%;
+            padding:4% 0;
+            margin-top: 30px;
+            background-color: #7276ec;
+            transition:background-color 0.8s;
+            
+            span{
+                font-size: 70px;
+                color: white
+            }
+        }
+        
+        a:hover{
+            background-color: #9598ee;
+            
+        }
+    }
+}
+// OurPartners Ends Here
+
+// Create-section Starts Here
+.create-section{
+    width: 70%;
+    margin: 80px auto;
+    @include flex_property();
+    
+    .sec-1{
+        width: 40%;
+        h1{
+            font-weight: 600;
+        }
+        p{
+            font-weight: 200;
+            color: grey;
+            font-size: 17px;
+            margin: 20px 0;
+        }
+    }
+
+    .sec-2{
+        @include flex_property();
+        width: 50%;
+        margin: 60px auto;
+
+        h4{
+            width: 50%;
+            font-weight: 700;
+        }
+
+        progress{
+            width: 100%;
+            height: 7%;
+            background: #4232c2;
+            color: #4232c2;
+            border-radius:30px;
+        }
+        
+        progress::-webkit-progress-value {
+            background: #4232c2;
+            border-radius: 30px;
+        }
+          
+        progress::-moz-progress-bar {
+            background: #4232c2;
+            border-radius: 30px;
+        }
+
+        ::-webkit-progress-bar{
+            border-radius: 30px;
+        }
+    }
+}
+// Create-section Ends Here
+
+//Choose-Section Starts Here
+
+.choose{
+    width: 100%;
+    background-color: rgb(239,239,253);
+    margin: 0 auto;
+    
+    .banner{
+        width: 70%;
+        @include flex_property;
+        margin: 17% auto 5% auto;
+        padding: 20px 0;
+        
+        img{
+            width: 35%;
+            margin-top: -18%;
+        }
+        .sec-2{
+            width: 60%;
+            h1{
+                font-weight:600;
+            }
+
+            p{
+                font-size: 15px;
+                font-weight: 300;
+                color: grey;
+                line-height: 30px;
+            }
+
+      
+        }
+    }
+}
+//Choose-Section Ends Here
+
+//Three-Icons Starts Here
+.three-icons{
+    width: 70%;
+    margin: 0 auto;
+    @include flex_property;
+    text-align: center;
+    margin-bottom: 73px;
+
+    .sec{
+        width: 32%;
+        font-weight: 300;
+        i{
+            font-size:60px;
+            color: white;
+            padding: 20px 40px;
+            border-radius: 15%;
+            background-color: #6266ea;
+        }
+        
+        h2{
+            margin: 20px 0;
+            font-weight: 300;
+        }
+
+        p{
+            font-size: 17px;
+        }
+    }
+}
+//Three-Icons Ends Here
+
+// Form-Section Starts Here
+.form-section{
+    width: 100%;
+    background-color:#f6f9fe;
+    padding: 85px 0;
+    .banner{
+        width: 40%;
+        margin: 0 auto;
+        text-align: center;
+
+        h1{
+            font-weight: 600;
+            padding: 30px 0 10px 0;
+            font-size: 40px;
+        }
+        input{
+            width: 60%;
+            height: 45px;
+            border-top-left-radius:20px ;
+            border-top-right-radius:0 ;
+            border-bottom-left-radius:20px ;
+            border-bottom-right-radius:0;
+            border: 1px solid rgb(189, 189, 189);
+        }
+
+        input::placeholder{
+            font-size: 18px;
+        }
+
+        button{
+            width: 16%;
+            height: 45px;
+            border-top-left-radius:0;
+            border-top-right-radius:20px ;
+            border-bottom-left-radius:0 ;
+            border-bottom-right-radius:20px;
+            border: 1px solid #6266ea;
+            background-color: #6266ea;
+            color: white;
+            font-size:18px;
+            font-family: $primary_font;
+            margin-left:-2.8px;
+            transition: background-color 0.2s;
+        }
+
+        button:hover{
+            background-color: #7276ec;
+        }
+        
+        p{
+            width: 76%;
+            font-weight: 300;
+            padding: 10px 0;
+            font-size: 16px;
+            margin: 0 auto;
+        }
+    }
+}
+// Form-Section Ends Here
+
+// AboutUs.html Ends Here ---------- AboutUs.html Ends Here ---------- AboutUs.html Ends Here
+
+// Media Query Starts here
+@media (max-width:1398px){
+    
+    //Aboutus Starts here
+    .aboutus{
+        .banner{
+            width: 80%;
+            transition: 0.6s;
+        }
+    }
+    //Aboutus Starts here
+
+    //Team Starts here
+    .team{
+       .banner{
+            width: 80%;
+            transition: 0.6s;
+         
+            .sec-1{
+                width: 30%;
+            }
+
+            .sec-2{
+                width: 70%;
+            }
+        }
+    }
+    //Team Ends here
+
+    // OurPartners Starts Here
+    .partner{
+        .banner{
+            width: 80%;
+            margin: 0 auto;
+            a{
+                width: 22%;
+                transition:0.5s;
+            }
+        }
+    }
+    // OurPartners Ends Here
+
+    //Creative-Section Starts Here
+    .create-section{
+        width: 80%;
+        transition: width 0.6s;
+        .sec-1{
+            width: 50%;
+        }
+        
+        .sec-2{
+            width: 50%;
+        }
+    }
+    //Creative-Section Ends Here
+
+    //Choose-Section Starts Here
+    .choose{
+        .banner{
+            width: 80%;
+        }
+    }
+    //Choose-Section Ends Here
+
+    //Three-Icons Starts Here
+    .three-icons{
+        width: 80%;
+    }
+    //Three-Icons Ends Here
+
+    //Form-Section Starts Here
+    .form-section{
+        .banner{
+            width: 50%;
+        }
+    }
+    //Form-Section Ends Here
+}
+
+@media(max-width:1200px){
+
+    //Aboutus Starts here
+    .aboutus{
+        .banner{
+            width: 80%;
+            transition: 0.6s;
+        }
+    }
+    //Aboutus Starts here
+
+    //Team-Section Starts here
+    .team{
+       .banner{
+            width: 80%;
+            transition: 0.6s;
+        }
+    }
+    //Team-Section Ends here
+
+    // OurPartners Starts Here
+    .partner{
+        .banner{
+            width: 80%;
+        }
+    }
+    // OurPartners Ends Here
+
+    // Create-Section Starts Here
+    .create-section{
+        width: 80%;
+        transition: width 0.6s;
+        .sec-1{
+            width: 50%;
+        }
+        
+        .sec-2{
+            width: 50%;
+        }
+    }
+    // Create-Section Ends Here
+
+    //Choose-Section Starts Here
+    .choose{
+        .banner{
+            width: 80%;
+            .sec-2{
+               margin-top: -80px;
+
+               p{
+                   margin: 30px auto;
+
+               }
+            }
+        }
+    }
+    //Choose-Section Ends Here
+
+    //Form-Section Starts Here
+    .form-section{
+        .banner{
+            width:50%;
+        }
+    }
+    //Form-Section Ends Here
+}
+
+@media(max-width:992px){
+    
+    // Aboutus starts here   
+    .aboutus{
+        .banner{
+            width: 80%;
+            .sec-1{
+                width: 94%;
+                margin: 4% auto;
+                transition: 0.5s;
+            }
+
+            .sec-2{
+                width: 100%;
+                transition: 0.5s;
+            }
+        }
+    }
+    // AboutUs Ends here
+
+    //Team Section Starts Here
+    .team{
+        .banner{
+            width: 80%;
+            .sec-1{
+                width: 100%;
+                transition: 0.6s;
+            }
+
+            .sec-2{
+                width: 90%;
+                transition: 0.6s;
+                margin: 50px auto;
+            }
+        }
+    }
+    //Team Section Ends Here
+
+    // OurPartners Starts Here
+    .partner{
+        .banner{
+            width:80%;
+            margin: 0 auto;
+            a{
+                width: 23%;
+                padding: 40px 0;
+                transition:0.5s;
+            }
+        }
+    }
+    // OurPartners Ends Here
+
+    //Creative-Section Starts Here
+    .create-section{
+        width: 80%;
+        .sec-1{
+            width: 55%;
+            h1{
+                width: 100%;
+                font-weight: 600;
+            }
+        }
+
+        .sec-2{
+            width: 45%;
+            margin: 14% auto;
+        }
+    }
+    //Creative-Section Ends Here
+
+    //Choose-Section Starts Here
+    .choose{
+        .banner{
+            width: 80%;
+            margin-top: 40% ;
+            img{
+                width: 100%;
+                margin: 0 auto;
+                margin-top: -60%;
+            }
+
+            .sec-2{
+                width: 100%;
+                padding: 20px 0;
+            }
+        }
+    }
+    //Choose-Section Ends Here
+
+    //Three-Icons Starts Here
+    .three-icons{
+        width: 100%;
+        .sec{
+            width: 100%;
+            margin: 10px 0;
+        }
+    }
+    //Three-Icons Ends Here
+
+    //Form-Section Starts Here
+    .form-section{
+        .banner{
+            width:80%;
+        }
+    }
+    //Form-Section Ends Here
+}
+
+@media(max-width:768px){
+    
+    //Team Section Starts Here
+    .team{
+        .banner{
+            .sec-2{
+                .img-1,.img-2,.img-3{
+                    width: 100%;
+                    margin: 30px auto;
+                    transition: 0.6s;
+                    img{
+                        width: 70%;
+                    }
+                }
+            }
+        }
+    }
+    //Team Section Ends Here
+
+    // OurPartners Starts Here
+    .partner{
+        .banner{
+            width: 80%;
+            margin: 0 auto;
+            a{
+                width: 100%;
+                padding: 37px 0;
+                transition:0.5s;
+            }
+        }
+    }
+    // OurPartners Ends Here
+
+    //Creative-Section Starts Here
+    .create-section{
+        width: 80%;
+        .sec-1{
+            width: 100%;
+            h1{
+                width: 100%;
+                font-weight: 600;
+            }
+        }
+
+        .sec-2{
+            width: 100%;
+            margin: 0 auto;
+        }
+    }
+    //Creative-Section Ends Here
+
+    //Choose-Section Starts Here
+    .choose{
+        .banner{
+            width: 80%;
+            margin-top: 55%;
+            
+        }
+    }
+    //Choose-Section Ends Here
+
+    //Three-Icons Starts Here
+    .three-icons{
+        width: 100%;
+        .sec{
+            width: 80%;
+            margin: 0 auto;
+        }
+    }
+    //Three-Icons Ends Here
+
+    //Form-Section Starts Here
+    .form-section{
+        .banner{
+            width: 80%;
+            input::placeholder{
+                font-size: 16px;
+
+            }
+
+            button{
+                font-size: 15px;
+            }
+        }
+    }
+    //Form-Section Ends Here
+}
+
+@media(max-width:576px){
+    
+    //Aboutus Starts here
+    .aboutus{
+        .banner{
+            width: 95%;
+            transition: 0.5s;
+            .sec-1{
+                width: 100%;
+                margin: 10% 0 auto auto;
+                transition: 0.5s;
+            }
+
+            .sec-2{
+                width: 100%;
+                transition: 0.5s;
+            }
+        }
+    }
+    //Aboutus Ends here
+
+    //Team Section Starts Here
+    .team{
+        .banner{
+            width: 95%;
+            margin: 0 auto;
+            .sec-2{
+                width: 95%;
+                margin: 0 auto;
+
+                .img-1,.img-2,.img-3{
+                    width: 100%;
+                    margin: 30px auto;
+                    transition: 0.6s;
+                    img{
+                        width: 70%;
+                    }
+                }
+            }
+        }
+    }
+    //Team Section Ends Here
+
+    // OurPartners Starts Here
+    .partner{
+        .banner{
+            width: 95%;
+        }
+    }
+    // OurPartners Ends Here
+
+    //Creative-Section Starts Here
+    .create-section{
+        width: 95%;
+        margin: 100px auto;
+
+        .sec-1{
+            width: 100%;
+        }
+
+        .sec-2{
+            width: 100%;
+        }
+    }
+    //Creative-Section Ends Here
+
+    //Choose-Section Starts Here
+    .choose{
+        .banner{
+            width: 95%;
+            margin-top:70% ;
+        }
+    }
+    //Choose-Section Ends Here
+
+    //Three-Icons Starts Here
+    .three-icons{
+        .sec{
+            width: 95%;
+            margin: 0 auto;
+        }
+    }
+    //Three-Icons Ends Here
+
+    //Form-Section Starts Here
+    .form-section{
+        .banner{
+            width: 95%;
+            input{
+                width: 70%;
+            }
+            input::placeholder{
+                font-size: 16px;
+
+            }
+
+            button{
+                width:25%;
+                font-size: 17px;
+            }
+        }
+    }
+    //Form-Section Ends Here
+}
+
+@media(max-width:428px){
+
+    //Aboutus Starts here
+    .aboutus{
+        
+        .banner{
+            width: 95%;
+            .sec-1{
+                width: 100%;
+                margin: 14% auto;
+                transition: 0.5s;
+
+                h1{
+                    font-size: 35px;
+                }
+            }
+
+            .sec-2{
+                width: 100%;
+                transition: 0.5s;
+            }
+        }
+    }
+    //Aboutus Ends Here
+
+    //Team Starts Here
+    .team{
+        .banner{
+            margin: 15px auto;
+            .sec-1{
+                h1{
+                    margin: 15px 0;
+                }
+            }
+            .sec-2{
+                .img-1,.img-2,.img-3{
+                    width: 100%;
+                    margin: 10px auto;
+                    transition: 0.6s;
+                    img{
+                        width: 90%;
+                    }
+                }
+            }
+        }
+    }
+    //Team Ends Here
+    
+    //Choose-Section Starts Here
+    .choose{
+        .banner{
+           .sec-2{
+               h1{
+                   font-size:28px;
+                   margin-top:20%;
+                }
+            }
+        }
+    }
+    //Choose-Section Ends Here
+
+    //Form-Section Starts Here
+    .form-section{
+        .banner{
+            width: 95%;
+
+            h1{
+                font-size: 26px;
+            }
+            input{
+                width: 70%;
+                height: 40px;
+            }
+            input::placeholder{
+                font-size: 14px;
+
+            }
+
+            button{
+                width:25%;
+                height: 40px;
+                font-size: 14px;
+            }
+
+            p{
+                font-size: 15px;
+            }
+        }
+    }
+    //Form-Section Ends Here
+}
+// Media Query Starts here

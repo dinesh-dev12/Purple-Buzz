@@ -1,0 +1,827 @@
+// resource used in document
+$primary_color:#4232c2;
+$primary_font:'Open Sans', sans-serif;
+$secondary_color:rgba(0,0,0,.55);
+
+@mixin flex_property{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: $primary_font;
+    scroll-behavior: smooth;
+}
+
+@import "header"; // Header File is inclueded in the css file.
+
+// index.html Starts Here ---------- index.html Starts Here ---------- index.html Starts Here
+
+// Carousel Starts here
+#myCarousel{
+    background-image: url("../img/banner-bg-01.jpg");
+    background-size: cover;
+
+    ol{
+        li{
+            width: 30px;
+            height: 3px;
+            background-color: #6266ea;
+            border: none;
+        }
+    }
+    
+    .carousel-inner{
+        height: 82vh;
+        
+        .heading{
+            width: 60%;
+            margin: 0 auto;
+            position: relative;
+            top: 9vh;
+            
+            h1{
+                color: #6266ea;
+                font-size: 65px;
+                font-weight: 300;
+                line-height: 120%;
+                
+                strong{
+                    font-weight: 500;
+                }
+            }
+            
+            p{
+                color: grey;
+                padding: 2% 0;
+                line-height: 25px;
+            }
+
+            button{
+                color: $primary_color;
+                border-radius: 25px;
+                border-color: $primary_color;
+                font-size: 20px;
+            }
+
+            button:hover{
+                background-color:$primary_color;
+                color: white;
+                transition:0.3s ;
+            }
+        }
+    }
+    
+    .glyphicon{
+        color: $primary_color;
+    }
+}
+// Carousel Ends here
+
+// Services Starts here
+.services{
+    width: 100%;
+    margin: 0 auto;
+    
+    .title{
+        width: 100%;
+        h1{
+            text-align: center;
+            font-size:38px;
+            font-weight: 700;
+            padding: 20px 0; 
+        }
+    }
+
+    .banner{
+        @include flex_property();
+        width: 52%;
+        margin: 0 auto;
+        padding: 30px 0;
+
+        .gift{
+            width: 5%;
+            
+            .fa-gift{
+                display:inline-block;
+                font-size:28px;
+                margin: 0 auto;
+            }
+        }
+
+        .heading{
+            width:95%;
+            hr{
+                width:130px;
+                height: 6px;
+                border: none;
+                background-color: #6266ea;
+            }
+            
+            h2{
+                margin: 0;
+            }
+
+            p{
+                color: grey;
+                line-height: 25px;
+            }
+        }
+    }
+
+    // Switches Starts here
+    .switches{
+        background-color: #6266ea;
+        padding: 40px 0;
+        text-align: center;
+
+        .switch{
+            background-color: #6266ea;
+            border: none;
+            padding: 10px 20px;
+            color: white;
+            font-family: $primary_font;
+            margin: 0 30px;
+            border-radius: 25px;
+            transition: 0.5s;
+        }
+
+        .switch:hover{
+            background-color: #4232c2;
+        }
+
+        .switch-1{
+            background-color: #4232c2
+        }
+    }
+    // Switches Starts here
+
+    // Cards Starts here
+    .cards{
+        width: 70%;
+        margin: 0 auto;
+        padding: 50px 0;
+        @include flex_property();
+        
+        .card{
+            width: 23%;
+            height:30vh;
+            border-radius: 5px;
+            margin: 25px 0;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+            overflow: hidden;
+            position:relative;
+            
+            button{
+                color: white;
+                background: transparent;
+                border-color: white;
+                border-radius: 20px;
+                position: relative;
+                top: 18vh;
+            }
+            
+            p{
+                color: white;
+                position: relative;
+                top: 19vh;
+                text-decoration: none;
+            }
+        }
+
+        .card::before{
+            content: "";
+            width: 100%;
+            height: 100%;
+            background-image: linear-gradient(0,rgb(228, 228, 228),rgb(0, 0, 0),transparent);
+            position: absolute;
+            transform: translatey(30%);
+        }
+
+        .card:hover::before{
+            transform: translatey(50%);
+            transition: all 0.7s ease-out;
+            background-image: linear-gradient(0,rgb(5, 5, 5),rgb(253, 253, 253),transparent);
+        }
+
+        a:hover{
+            text-decoration: none;
+        }
+
+        .card:hover{
+            button{
+                color: black;
+                border-color: black;
+                font-weight: 900;
+                transition: all 0.6s;
+            }
+
+            p{
+                color: black;
+                font-weight: 600;
+            }
+        }
+        
+        .card-1{
+            background-image: url("../img/services-01.jpg");
+            background-size: cover;
+        }
+        
+        .card-2{
+            background-image: url("../img/services-02.jpg");
+            background-size: cover;
+        }
+        
+        .card-3{
+            background-image: url("../img/services-03.jpg");
+            background-size: cover;
+        }
+
+        .card-4{
+            background-image: url("../img/services-04.jpg");
+            background-size: cover;
+        }
+
+        .card-5{
+            background-image: url("../img/services-05.jpg");
+            background-size: cover;
+        }
+
+        .card-6{
+            background-image: url("../img/services-06.jpg");
+            background-size: cover;
+        }
+
+        .card-7{
+            background-image: url("../img/services-07.jpg");
+            background-size: cover;
+        }
+
+        .card-8{
+            background-image: url("../img/services-08.jpg");
+            background-size: cover;
+        }
+    }
+    // Cards Ends here
+
+    // Wrk-sec Starts here
+    .wrk-sec{
+        background-color: #6266ea;
+        text-align: center;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 20px 0;
+
+        .box-1{
+            width: 33%;
+          
+            i{
+                font-size: 80px;
+                color: white;
+            }
+        }
+
+        .box-2{
+            width: 30%;
+            
+            h2{
+                color: white;
+                font-weight: 200;
+            }
+
+            p{
+                color: white;
+                font-weight: 200;
+            }
+        }
+
+        .box-3{
+            width: 33%;
+            a{
+                button{
+                    color: white;
+                    border-radius: 25px;
+                    border:none;
+                    font-size: 18px;
+                    background-color: $primary_color
+                }
+            }
+        }
+    }
+    // Wrk-sec Starts here
+}
+// Services Ends here
+
+// Recent Work Starts here
+.recentwork{
+    width: 70%;
+    margin: 0 auto;
+    padding: 60px 0;
+    @include flex_property();
+
+    h1{
+        width: 100%;
+        text-align: center;
+    }
+    
+    //Boxes Starts Here
+    .boxes{
+        width:30%;
+        height: 40vh;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+        margin: 60px 0;
+        border-radius: 10px;
+        position: relative;
+        overflow: hidden;
+
+        h3{
+            font-weight: 400;
+            position: relative;
+            top: 30vh;
+            font-size: 24px;
+        }
+
+        p{
+            font-weight: 400;
+            position: relative;
+            top: 30vh;
+        }
+    }
+
+    .boxes::before{
+        content: "";
+        width: 100%;
+        height: 200%;
+        background-image: linear-gradient(0,rgb(201, 201, 201),transparent);
+        position: absolute;
+        transform: translatey(0%);
+    }
+
+    .boxes:hover::before{
+        transform: translatey(20%);
+        transition: all 0.9s ease-out;
+        background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 33.333%, rgba(97,84,199,1) 66.666%, rgba(255,255,255,0) 99.999%);
+    }
+
+    .boxes:hover{
+        h3{
+            color: white;
+            position: relative;
+            top:20vh;
+            transition:1s;
+        }
+        p{
+            color:white;
+            position: relative;
+            top:20vh;
+            transition:1s;
+        }
+    }
+
+    .box-1{
+        background-image: url("../img/recent-work-01.jpg");
+        background-size:cover;
+    }
+
+    .box-2{
+        background-image: url("../img/recent-work-02.jpg");
+        background-size:cover;
+    }
+
+    .box-3{
+        background-image: url("../img/recent-work-03.jpg");
+        background-size:cover;
+    }
+
+    .box-4{
+        background-image: url("../img/recent-work-04.jpg");
+        background-size:cover;
+    }
+
+    .box-5{
+        background-image: url("../img/recent-work-05.jpg");
+        background-size:cover;
+    }
+
+    .box-6{
+        background-image: url("../img/recent-work-06.jpg");
+        background-size:cover;
+    }
+    //Boxes Starts Here
+}
+// Recent Work Ends here
+
+
+// Media Query Starts Here ----------- Media Query Starts Here -------------- Media Query Starts Here ---------- Media Query Starts Here
+@media(max-width:1398px){
+
+    .services{
+        .cards{
+            width: 80%;
+        }
+    }
+}
+
+@media(max-width:1200px){
+
+    // Carousel Starts here
+    #myCarousel{
+        .carousel-inner{
+            .heading{
+                width: 70%;
+            }
+        }
+    }
+    //Carousel Ends Here
+
+    //Services Starts Here
+    .services{
+        .cards{
+            .card{
+                width: 30%;
+                transition: 0.8s;
+            }
+        }
+    }
+    //Serivces Ends Here
+    
+    //Recentwork Starts Here
+    .recentwork{
+        width: 80%;
+        transition:1s;
+        
+        .boxes{
+            height: 28vh;
+            
+            h3{
+                position: relative;
+                top:15vh;
+            }
+
+            p{
+                position: relative;
+                top:15vh;
+            }
+        }
+    }
+    //Recentwork Ends Here
+}
+
+@media(max-width:992px){
+
+    //Services Starts Here
+    .services{
+        .banner{
+            width: 62%;
+            .gift{
+                width: 5%;
+            }
+            
+            .heading{
+                width:93%;
+            }
+        }
+
+        .switches{
+            .switch{
+               padding: 10px 5px;
+            }
+
+            .switch-1{
+                padding: 10px 16px;
+                border-radius: 25px;
+             }
+        }
+        
+        .wrk-sec{
+            .box-1{
+                width: 100%;
+            }
+
+            .box-2{
+                width: 100%;
+                
+                h2{
+                    font-size: 22px;
+                }
+            }
+
+            .box-3{
+                width: 100%;
+                
+                a{
+                    button{
+                        margin: 14px 0;
+                    }
+                }
+            }
+        }
+        .cards{
+            width: 80%;
+        }
+    }
+    //Serivces Ends Here
+}
+
+@media(max-width:768px){
+    
+    // Carousel Starts here
+    #myCarousel{
+        .carousel-inner{
+            .heading{
+                h1{
+                    font-size: 55px;
+                }
+            }
+        }
+    }
+    // Carousel Ends here
+
+    //Services Starts Here
+    .services{
+        .banner{
+            width: 70%;
+        }
+
+        .switches{
+
+            .switch{
+               padding: 10px 5px;
+            }
+
+            .switch-1{
+                padding: 10px 16px;
+                border-radius: 25px;
+             }
+        }
+
+        .cards{
+            width: 65%;
+        
+            .card{
+                width: 48%;
+                transition: 0.8s;
+            }
+        }
+
+        .wrk-sec{
+            .box-1{
+                width: 100%;
+            }
+
+            .box-2{
+                width: 100%;
+
+                h2{
+                    font-size: 22px;
+                }
+            }
+
+            .box-3{
+                width: 100%;
+
+                a{
+                    button{
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+    //Services Ends Here
+
+    //Recentwork Starts here
+    .recentwork{
+        width: 100%;
+        transition:1s;
+        
+        .boxes{
+            width: 80%;
+            height: 60vh;
+            margin: 40px auto;
+
+            h3{
+                position: relative;
+                top: 45vh;
+            }
+
+            p{
+                position: relative;
+                top: 45vh;
+            }
+        }
+    }
+    //Recentwork Ends here
+}
+
+@media(max-width:576px){
+
+    // Carousel Starts here
+    #myCarousel{
+        .carousel-inner{
+            .heading{
+                position: relative;
+                top:8vh;
+                h1{
+                    font-size: 45px;
+                }
+                p{
+                    font-size: 15px;
+                }
+                button{
+                    font-size: 17px;
+                }
+            }
+        }
+    }
+    // Carousel Ends here
+
+    // Services Starts here
+    .services{
+        .banner{
+            width: 90%;
+        }
+
+        .switches{
+            .switch{
+               padding: 10px 2px;
+               font-size: 13px;
+            }
+
+            .switch-1{
+                padding: 10px 10px;
+                border-radius: 25px;
+            }
+        }
+        .cards{
+            width: 75%;
+        
+            .card{
+                width: 100%;
+                transition: 0.8s;
+            }
+        }
+
+        .wrk-sec{
+            .box-1{
+                width: 100%;
+            }
+
+            .box-2{
+                width: 100%;
+
+                h2{
+                    font-size: 22px;
+                }
+            }
+
+            .box-3{
+                width: 100%;
+
+                a{
+                    button{
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+    // Services Starts here
+
+    //Recent work Starts Here
+    .recentwork{
+        width: 100%;
+        transition:1s;
+        .boxes{
+            width: 96%;
+            height: 55vh;
+            margin: 0 auto;
+            margin: 40px auto;
+
+            h3{
+                position: relative;
+                top: 42vh;
+            }
+
+            p{
+                position: relative;
+                top: 42vh;
+            }
+        }
+    }
+    //Recent work Ends Here
+}
+
+@media(max-width:428px){
+    
+    // Carousel Starts here
+    #myCarousel{
+        .carousel-inner{
+            .heading{
+                position: relative;
+                top:8vh;
+                h1{
+                    font-size: 35px;
+                }
+                p{
+                    font-size: 15px;
+                }
+                button{
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+    // Carousel Ends here
+
+    // Services Starts here
+    .services{
+        .banner{
+            width: 82%;
+            @include flex_property;
+            
+            .gift{
+                width: 4%;
+            }
+            
+            .heading{
+                width:90%;
+
+                h2{
+                    font-size: 19px;
+                }
+            }
+        }
+        
+        .switches{
+            width: 100%;
+
+            .switch{
+               margin: 0 10px;
+            }
+
+            .switch-1{
+                padding: 6px 7px;
+                border-radius: 25px;
+             }
+        }
+
+        .wrk-sec{
+
+            .box-1{
+                width: 100%;
+            }
+
+            .box-2{
+                width: 100%;
+
+                h2{
+                    font-size: 22px;
+                }
+            }
+
+            .box-3{
+                width: 100%;
+                
+                a{
+                    button{
+                        margin: 14px 0;
+                    }
+                }
+            }
+        }
+    }
+    // Services Ends here
+}
+//Media Query Ends Here ----- Media Query Ends Here
+
+// index.html Ends Here --- index.html Ends Here
+
+// <<<<<<<< NOTE NOTE NOTE NOTE >>>>>>>>>>>
+// The Files That Are Mentioned Below are the Css Files of Html Pages
+// 1. About.html 
+@import "about"; // Its Css File of About.html page ..
+
+// 2. Work.html 
+@import "work"; // Its Css File of work.html page ..
+@import "work-explain";
+
+// 3. Pricing.html 
+@import "pricing"; // Its Css File of Pricing.html page ..
+
+// 3. Contact.html 
+@import "contact"; // Its Css File of Contact.html page ..
+
+//Its CSs File Of Footer.
+ @import "footer";    
+
+
+
+
+
+

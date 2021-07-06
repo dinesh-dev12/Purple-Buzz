@@ -1,0 +1,503 @@
+// work.html Ends Here ---------- work.html Ends Here ---------- work.html Ends Here
+
+// Work-Section Starts Here
+.work-section{
+    width: 100%;
+    height: 100%;
+    padding: 7% 0;
+    background-image: url("../img/banner-bg-02.jpg");
+    background-size: cover;
+    background-position: center center;
+    
+    .banner{
+        width: 48%;
+        margin: 0 auto;
+        color: white;
+        text-align: center;
+        
+        h1{
+            font-weight: 600;
+            font-size: 40px;
+        }
+        hr{
+            width: 10%;
+            height: 5px;
+            border: none;
+            margin: 20px auto;
+            background-color:#6266ea;
+        }
+
+        p{
+            font-size: 17px;
+            font-weight: 300;
+        }
+
+        .button{
+            width: 16%;
+            height: 40px;
+            margin: 0 3%;
+            border-radius:20px;
+            color: white;
+            background: transparent;
+            font-size: 17px;
+            font-weight: 300;
+        }
+
+        .btn-1{
+            border-color: white;
+            transition: background-color 0.4s;
+        }
+
+        .btn-1:hover{
+            background-color: white;
+            color: black;
+        }
+
+        .btn-2{
+            border: none;
+            background-color: #6266ea;
+            transition: background-color 0.4s;
+        }
+
+        .btn-2:hover{
+            background-color: #7276ec;
+        }
+    }
+}
+// Work-Section Ends Here
+
+//Click-Section Starts Here
+.click{
+    width: 100%;
+
+    .clickbar{
+        width: 35%;
+        margin: 90px auto 20px auto;
+        text-align: center;
+        @include flex_property;
+
+        .switch-0{
+            margin: 0 5px;
+            background-color: white;
+            border: none;
+            color: #6266ea;
+            border-radius: 20px;
+            padding: 8px 20px;
+        }
+
+        .switch-0:hover{
+            background-color: #4232c2;
+            color: white;
+        }
+
+        .switch-01{
+            width: 10%;
+            color: white;
+            background-color: #4232c2;
+        }
+    }
+
+    .click-sec{
+        width: 70%;
+        margin: 0 auto;
+        @include flex_property;
+        
+        .card-0{
+            width: 31%;
+            border-radius: 5px;
+            border: 1px solid rgb(219, 218, 218);
+            margin: 30px auto;
+            text-decoration: none;
+
+            img{
+                width:100%;
+            }
+
+            h3,p,button{
+                font-weight: 300;
+                margin: 3% 3%;
+                color: black;
+                
+            }  
+
+            p{
+                font-size: 16px;
+            } 
+
+            button{
+                border: none;
+                background: none;
+                color: #4232c2;
+            }      
+        }
+    }
+
+    .pre-nxt-sec{
+        width: 30%;
+        margin: 0 auto 40px auto;
+        text-align:center;
+
+        button{
+            color: white;
+            background-color: #6266ea;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            margin: 0 0.2%;
+        }
+
+        button:hover{
+            background-color: #7276ec;
+        }
+
+        .edit-1{
+            background-color: white;
+            color: black;
+        }
+        .edit-1:hover{
+            background-color: white;
+        }
+    }
+}
+//Click-Section Ends Here
+//Transform-Section Starts Here
+.transform{
+    width: 100%;
+    background-color: #f6f9fe !important;
+
+    .banner{
+        width:70%;
+        margin: 0 auto;
+        @include flex_property;
+
+        .sec-1{
+            width: 45%;
+            margin:auto 0;
+
+            h2{
+                color: grey;
+                font-weight: 300;
+            }
+
+            h1{
+                font-weight: 600;
+            }
+
+            p{
+                color: grey;
+                margin: 20px 0;
+                font-weight: 300;
+                text-align: left;
+                font-size: 17px;
+            }
+        }
+
+        .sec-2{
+            width: 50%;
+            @include flex_property;
+            margin: 20px 0;
+
+            img{
+                width: 45%;
+                margin: 20px 10px;
+                
+            }
+        }
+    }
+}
+//Transform-Section Ends Here
+// work.html Ends Here ---------- work.html Ends Here ---------- work.html Ends Here
+
+
+//Media Query Starts Here
+@media (max-width:1398px){
+    
+    // Work-Section Starts Here
+    .work-section{
+        .banner{
+            width: 60%;
+        }
+    }
+    // Work-Section Ends Here
+
+    //Click-Section Starts Here
+    .click{
+        .clickbar{
+            width: 50%;
+        }
+
+        .click-sec{
+            width: 80%;
+        }
+    }
+    //Click-Section Ends Here
+    
+    //Transform Starts Here
+    .transform{
+        .banner{
+            width: 80%;
+        }
+    }
+    //Transform Ends Here
+}
+
+@media(max-width:1200px){
+    
+    // Work-Section Starts Here
+    .work-section{
+        .banner{
+            width: 70%;
+
+            .button{
+                width: 20%;
+                font-size: 16px;
+                margin: 30px 2%;
+                
+            }
+        }
+    }
+    // Work-Section Ends Here
+
+    //Click-Section Starts Here
+    .click{
+        .clickbar{
+            width: 60%;
+        }
+
+        .click-sec{
+            width: 80%;
+        }
+    }
+    //Click-Section Ends Here
+}
+
+@media (max-width:992px){
+
+    //Click-Section Starts Here
+    .click{
+        .click-sec{
+            width: 80%;
+            
+            .card-0{
+                width: 45%;
+                transition: 1s;
+            }
+        }
+    }
+    //Click-Section Ends Here
+    
+    //Transform Starts Here
+    .transform{
+        .banner{
+            width: 80%;
+
+            .sec-1{
+                width: 95%;
+                margin: 0 auto;
+            }
+
+            .sec-2{
+                width: 95%;
+                margin: 0 auto;
+            }
+        }
+    }
+    //Transform Ends Here
+}
+
+@media(max-width:768px){
+
+    // Work-Section Starts Here
+    .work-section{
+        .banner{
+            width: 80%;
+
+            .button{
+                width: 20%;
+                font-size: 16px;
+                margin: 30px 2%;
+                
+            }
+        }
+    }
+    // Work-Section Ends Here
+
+    //Click-Section Starts Here
+    .click{
+        .clickbar{
+            width: 85%;
+        }
+        .click-sec{
+            width: 80%;
+            
+            .card-0{
+                width: 45%;
+                transition: 1s;
+            }
+        }
+
+        .pre-nxt-sec{
+            width: 70%;
+        }
+    }
+    //Click-Section Ends Here
+}
+
+@media (max-width:576px){
+
+    // Work-Section Starts Here
+    .work-section{
+        .banner{
+            width: 95%;
+
+            hr{
+                width: 25%;
+            }
+            .button{
+                width: 20%;
+                font-size: 14px;
+                margin: 30px 2%;
+                
+            }
+        }
+    }
+    // Work-Section Ends Here
+
+    //Click-Section Starts Here
+    .click{
+        .clickbar{
+            width: 80%;
+            .switch-0{
+                font-size: 14px;
+                padding:6px 16px ;
+                margin: 0 1px;
+            }
+
+            .switch-01{
+                font-size: 14px;
+            }
+        }
+        .click-sec{
+            width: 80%;
+            
+            .card-0{
+                width: 100%;
+                transition: 1s;
+            }
+        }
+
+        .pre-nxt-sec{
+            width: 70%;
+        }
+    }
+    //Click-Section Ends Here
+
+    //Transform Starts Here
+    .transform{
+        .banner{
+            width: 95%;
+
+            .sec-1{
+                width: 100%;
+                margin: 0 auto;
+            }
+
+            .sec-2{
+                width: 100%;
+                margin: 0 auto;
+            }
+        }
+    }
+    //Transform Ends Here
+}
+
+@media(max-width:428px){
+    // Work-Section Starts Here   
+    .work-section{
+        .banner{
+            width: 95%;
+
+            h1{
+                font-size: 30px;
+            }
+
+            hr{
+                width: 25%;
+            }
+
+            h3{
+                font-size: 18px;
+            }
+
+            p{
+                font-size: 15px;
+            }
+            .button{
+                width: 38%;
+                font-size: 14px;
+                margin: 30px 2%;
+                
+            }
+        }
+    }
+    // Work-Section Ends Here
+
+    //Click-Section Starts Here
+    .click{
+        .clickbar{
+            width: 90%;
+            .switch-0{
+                font-size: 14px;
+                padding:6px 18px ;
+                margin: 0 2%;
+            }
+
+            .switch-01{
+                font-size: 14px;
+                padding: 6px 18px;
+                margin: 0 2%;
+            }
+        }
+        .click-sec{
+            width: 80%;
+            
+            .card-0{
+                width: 100%;
+                transition: 1s;
+            }
+        }
+
+        .pre-nxt-sec{
+            width: 90%;
+
+            button{
+                padding: 5px 10px;
+            }
+        }
+    }
+    //Click-Section Ends Here
+
+     //Transform Starts Here
+     .transform{
+        .banner{
+            width: 95%;
+
+            .sec-1{
+                width: 100%;
+                margin: 0 auto;
+            }
+
+            .sec-2{
+                width: 95%;
+                margin: 0 auto;
+
+                img{
+                    width: 40%;
+                }
+            }
+        }
+    }
+    //Transform Ends Here
+}
+
+//Media Query Ends Here

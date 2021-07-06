@@ -1,0 +1,268 @@
+// Header Starts here
+header{
+    width: 100%;
+    box-shadow: 0 1px 1px rgba(180,180,180,0.12), 
+    0 2px 2px rgba(100, 180, 180, 0.12),
+    0 4px 4px rgba(180,180,180,0.12),
+    0 8px 8px rgba(180,180,180,0.12),
+    0 16px 16px rgba(180,180,180,0.12);
+    position: relative;
+                
+    nav{
+        @include flex_property;
+        width: 70%;
+        margin: 0 auto;
+        padding:1.5% 0;
+        
+        .brand{
+            width: 15%;
+            
+            img{
+                width: 26px;
+            }
+            
+            h1{
+                color: black;
+                display: inline-block;
+                font-weight: 600;
+                font-size:22px;
+                margin: 0;
+                
+                .pur{
+                    color: $primary_color;
+                }
+            }
+
+        }
+
+        .menu{
+            text-align: center;
+            background: none;
+            display: none;
+            cursor: pointer;
+            
+            .fa-bars{
+                font-size: 26px;
+                color: grey;
+                background: none;
+                padding: 5% 0;;
+            }
+        }
+        
+        ul{
+            width: 70%;
+            margin: 0 auto;
+            @include flex_property();
+            position: relative;
+            
+            li{
+                width: 18%;
+                list-style-type: none;
+                text-align: center;
+                
+                a{
+                    // background-color: tan;
+                    color: $secondary_color;
+                    text-decoration: none;
+                }
+            }
+            
+            li:hover a{
+                padding: 10px;
+                border-radius: 20px;
+                color: white;
+                background-color: $primary_color;
+                transition:background-color 1s;
+                text-decoration: none;
+            }
+        }
+
+        .options{
+            width: 15%;
+            color: $primary_color;
+            text-align: center;
+            .fa{
+                width: 30%;
+                font-size: 20px;
+            }
+
+            .fa-bell-o:hover{
+                animation: bell 1.2s  linear infinite;
+            }
+
+            @keyframes bell{
+                0%{
+                    transform: rotate(20deg);
+                }
+
+                20%{
+                    transform: rotate(-20deg);
+                }
+
+                40%{
+                    transform: rotate(20deg);
+                }
+
+                60%{
+                    transform: rotate(-20deg);
+                }
+
+                80%{
+                    transform: rotate(20deg);
+                }
+
+                100%{
+                    transform: rotate(-20deg);
+                }
+            }
+
+            .fa-gear:hover{
+                animation: gear 3s  infinite;
+            }
+            
+            @keyframes gear {
+                0%{
+                    transform: rotate(0deg);
+                }
+
+                100%{
+                    transform: rotate(360deg);
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:1398px){
+
+    header{
+        .nav{
+            width: 80%;
+            .brand{
+                h1{
+                    font-size: 20px;
+                }
+            }
+
+            ul{
+                width: 60%;
+                
+                li{
+                    width: 19%;
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width:1200px){
+    
+    header{
+        .nav{
+            width: 80%;
+            .brand{
+                img{
+                    width: 18px;
+                }
+
+                h1{
+                    font-size:17px;
+                }
+            }
+
+            ul{
+                width: 70%;
+            }
+            
+        }
+    }
+}
+
+@media(max-width:992px){
+
+    header{
+        .nav{
+            max-width:720px;
+
+            .brand{
+                width: 70%;
+                
+                img{
+                    width: 25px;
+                }
+
+                h1{
+                    font-size:25px;
+                }
+            }
+
+           .menu{
+               width: 30%;
+               display: block;
+
+               .fa-bars{
+                   width: 10px;
+                   margin-top: 0;
+               }
+           }
+
+           ul{
+               width: 100%;
+               display:none;
+               text-decoration: none;
+               
+               li{
+                   width: 100%;
+                   height: 30px;
+                   margin-top: 20px;
+                }
+                
+                li:hover{
+                    border-radius: 20px;
+                    background-color: $primary_color;
+                }
+
+                li:hover{
+                    a{
+                        padding: 0;
+                        text-decoration: none;
+                    }
+                }
+            }
+            
+            .options{
+                width: 100%;
+                display: none;
+                margin-top: 20px;
+                
+                .fa{
+                    width: 32%;
+                    font-size: 24px;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:573px){
+
+    header{
+
+        .nav{
+            width: 95%;
+            margin:  auto;
+
+            .brand{
+                
+                h1{
+                   span{
+                       font-size: 20px;
+                   }
+                }
+            }
+        }
+    }
+}
+
+//Media Query Ends Here

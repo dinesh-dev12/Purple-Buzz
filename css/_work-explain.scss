@@ -1,0 +1,423 @@
+// Work-Explain.html Starts Here ---------- Work-Explain.html Starts Here ---------- Work-Explain.html Starts Here
+
+// Digital-Service Starts Here
+.digital-service{
+    width: 48%;
+    margin: 60px 26%;
+
+    h2{
+        font-weight: 300;
+    }
+
+    hr{
+        width: 15%;
+        height: 5px;
+        border: none;
+        background-color:#6266ea;
+    }
+
+    p{
+        font-size: 16.5px;
+        font-weight: 300;
+        margin: 20px 0;
+        color: grey;
+    }
+
+    img{
+        width: 100%;
+        border: 1px solid rgb(180, 179, 179);
+        border-radius: 6px;
+    }
+    
+    #myCarousel2{
+        width: 100%;
+        .carousel-inner{
+            width: 100%;
+            @include flex_property;
+            
+            .item{
+                width: 90%;
+                margin: 0 auto;
+                img{
+                    width: 14%;
+                    margin: 10px 10px;
+                    float: left;
+                    border: none;
+                }
+            }
+        }
+        
+        .left,.right{
+            width:0;
+            color: rgb(0, 0, 0);
+            font-size:14px;
+            
+            span{
+                font-size: 18px;
+                margin:2px;
+            }
+        }
+    }
+
+    .border-text{
+        width: 100%;
+        border-left: 6px solid #dee2e6;
+
+        h1{
+            font-weight: 300;
+            font-size:40px;
+            padding: 40px 20px;
+            font-style:italic;
+            line-height: 45px;
+        }
+    }
+
+    .comment-section{
+        width: 100%;
+        @include flex_property;
+        
+        h4{
+            font-weight: 600;
+        }
+
+        .sec0{
+            width: 100%;
+
+            img{
+                width: 6%;
+                border-radius:50%;
+                border: none;
+            }
+
+            h5{
+                width: 20%;
+                display: inline-block;
+                font-weight: 600;
+                line-height: 30px;
+                margin: 0 1.5%;
+                
+                span{
+                    font-weight: 300;
+                    font-size: 16px;
+                }
+            }
+
+            i{
+                width: 65%;
+                text-align: right;
+                color: #6266ea;
+                font-size: 17px;
+            }
+
+            p{
+                width: 90%;
+                margin: 20px auto;
+                border: 1px solid rgb(192, 192, 192);
+                padding: 20px 5px;
+                color: black;
+            }
+        }
+    }
+
+    form{
+        width: 100%;
+        @include flex_property;
+
+        h5{
+            font-weight: 300;
+            width: 50%;
+        }
+        
+        .sec-1,.sec-2{
+            width: 50%;
+            
+            input{
+                width: 90%;
+                border:1px solid  rgb(221, 221, 221);
+                border-radius: 5px;
+                height: 60px;
+                font-size: 18px;
+            }
+        }
+
+        .comment{
+            width: 95%;
+            height: 180px;
+            border-color:rgb(221, 221, 221);
+            font-size: 18px;
+        }
+
+        button{
+            width: 22%;
+            height: 60px;
+            background-color:#6266ea;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            position: relative;
+            left: 77%;
+            margin: 30px 0;
+            font-family:'Open Sans', sans-serif;
+            transition: background-color 0.3s;
+            font-size: 17px;
+        }
+
+        button:hover{
+            background-color: #7579e2;
+        }
+    }
+}
+// Digital-Service Ends Here
+
+//Related Post Start here
+.relatedpost{
+    width: 100%;
+    background-color: #f6f9fe;
+    padding: 35px 0;
+
+    .banner{
+        width: 70%;
+        margin:0 auto;
+        @include flex_property;
+
+        h2{
+            font-weight: 600;
+            font-size: 36px;
+            width: 100%;
+        }
+        
+        .sec0{
+            width: 31%;
+            background-color: white;
+            border: 1px solid rgb(214, 214, 214);
+            border-radius:15px;
+            margin: 20px 0;
+            text-decoration: none;
+            
+            img{
+                width: 100%;
+                border-radius:15px 15px 0 0;
+            }
+
+            h4,h5{
+                color: black;
+                margin: 14px 8px;
+            }
+
+            button{
+                color: #6266ea;
+                border: none;
+                background:none;
+                margin: 6px 8px;
+            }
+
+            i{
+                color: #6266ea;
+                margin: 0 20px;
+                position: relative;
+                left: 40%;
+            }
+        }
+    }
+}
+//Related Post Ends here
+
+
+// Work-Explain.html Ends Here ---------- Work-Explain.html Ends Here ---------- Work-Explain.htmll Ends Here
+
+
+//Media Query Starts Here
+@media(max-width:1200px){
+    
+    // .Digital Serivce Starts Here
+    .digital-service{
+        width: 55%;
+        margin: 100px auto;
+
+        #myCarousel2{
+            width: 100%;
+            
+            .carousel-inner{
+                width: 100%;
+                
+                .item{
+                    width: 100%;
+                    margin: 0 auto;
+                    
+                    img{
+                        width:13%;
+                    }
+                }
+            }
+        }
+    }
+    // .Digital Serivce Starts Here
+
+    //Related Post Starts Here
+    .relatedpost{
+        .banner{
+            width: 80%;
+            
+            .sec0{
+                i{
+                    position: relative;
+                    left: 20%;
+                }
+            }
+        }
+    }
+    //Related Post Ends Here
+}
+
+@media (max-width:992px){
+
+    // .Digital Serivce Starts Here
+    .digital-service{
+        width: 70%;
+    }
+    // .Digital Serivce Starts Here
+    
+    //Related Post Starts Here
+    .relatedpost{
+        .banner{
+            .sec0{
+                width: 48%;
+            }
+        }
+    }
+    //Related Post Ends Here
+}
+
+@media(max-width:768px){
+
+    // .Digital Serivce Starts Here
+    .digital-service{
+        width: 80%;
+    }
+    // .Digital Serivce Starts Here
+
+}
+
+@media (max-width:576px){
+
+    /// .Digital Serivce Starts Here
+    .digital-service{
+        width: 95%;
+
+        #myCarousel2{
+            .carousel-inner{
+                .item{
+                    width: 100%;
+                    margin: 3px;
+
+                    img{
+                        width: 15%;
+                        margin: 3px;
+                    }
+                }
+            }
+        }
+
+        .iframe{
+            height: 250px;
+        }}
+    // .Digital Serivce Starts Here
+
+    //Related Post Starts Here
+    .relatedpost{
+        .banner{
+            width: 95%;
+            .sec0{
+                width: 100%;
+
+                i{
+                    position: relative;
+                    left: 40%;
+                }
+            }
+        }
+    }
+    //Related Post Ends Here
+
+}
+
+@media(max-width:428px){
+    /// .Digital Serivce Starts Here
+    .digital-service{
+        width: 95%;
+
+        #myCarousel2{
+            .carousel-inner{
+                .item{
+                    width: 100%;
+                    margin: 3px;
+
+                    img{
+                        width: 13%;
+                        margin: 5px;
+                    }
+                }
+            }
+        }
+
+        .border-text{
+            h1{
+                font-size: 30px;
+            }
+        }
+
+        .iframe{
+            height: 150px;
+        }
+
+        .comment-section{
+            .sec0{
+                img{
+                    width: 16%;
+                }
+
+                h5{
+                   position: relative;
+                   top: 35px;
+                }
+
+                i{
+                    position: relative;
+                    left: 25%;
+                }
+            }
+        }
+        
+        form{
+            width: 95%;
+            margin: 0 auto;
+            .sec-1,.sec-2{
+                width: 100%;
+            }
+
+            button{
+                width: 40%;
+                position: relative;
+                left: 0;
+                font-size: 15px;
+
+            }
+        }
+    }
+    // .Digital Serivce Starts Here
+
+    //Related Post Starts Here
+    .relatedpost{
+        .banner{
+            .sec0{
+                i{
+                    position: relative;
+                    left: 0;
+                }
+            }
+        }
+    }
+    //Related Post Ends Here
+}
+
+//Media Query Ends Here
